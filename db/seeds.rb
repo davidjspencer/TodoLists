@@ -48,11 +48,11 @@ lnames.each do |lname|
 	todo = TodoList.create!(list_name: "stuff", list_due_date: duedate)
 	user.todo_lists << todo
 
-	item = TodoItem.create!([{title: "Wow", description: "Not as wow as first imagined"},
-							 {title: "Wow", description: "Not as wow as first imagined"},
-							 {title: "Wow", description: "Not as wow as first imagined"},
-							 {title: "Wow", description: "Not as wow as first imagined"},
-							 {title: "Wow", description: "Not as wow as first imagined"},])
+	item = TodoItem.create!([{title: "Wow", description: "Not as wow as first imagined", due_date: duedate},
+							 {title: "Wow", description: "Not as wow as first imagined", due_date: duedate},
+							 {title: "Wow", description: "Not as wow as first imagined", due_date: duedate},
+							 {title: "Wow", description: "Not as wow as first imagined", due_date: duedate},
+							 {title: "Wow", description: "Not as wow as first imagined", due_date: duedate},])
 	todo.todo_items << item 
 	
 end
